@@ -1,5 +1,5 @@
 {% set name = "xyzspaces" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/heremaps/xyz-spaces-python/archive/{{ version }}.tar.gz
-  sha256: ff7bf8edfd58b9984971d0004c57a1847ccfdc3e6a9649a30c37d6fd25763ade
+  sha256: 0a0a05729daa38e9e7dc09f16ac43f4cf220ff1fe13424c6a6edea0b97db8b2d
 
 build:
   noarch: python
@@ -28,6 +28,7 @@ requirements:
     - geopandas
     - requests
     - ijson ==3.1.1
+    - backoff >=1.10.0
 
 test:
   imports:
