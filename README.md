@@ -5,9 +5,13 @@ Home: https://github.com/heremaps/xyz-spaces-python
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xyzspaces-feedstock/blob/master/LICENSE.txt)
 
 Summary: Manage your XYZ Hub server or HERE Data Hub from Python.
+
+Development: https://github.com/heremaps/xyz-spaces-python
+
+Documentation: https://xyz-spaces-python.readthedocs.io/
 
 xyzspaces provides a programmatic interface to a XYZ Hub or HERE Data Hub
 <https://here.xyz> geospatial database and service for Python 3.6+. It is
