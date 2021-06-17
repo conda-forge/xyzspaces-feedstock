@@ -1,26 +1,26 @@
 {% set name = "xyzspaces" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/heremaps/xyz-spaces-python/archive/{{ version }}.tar.gz
-  sha256: 0a0a05729daa38e9e7dc09f16ac43f4cf220ff1fe13424c6a6edea0b97db8b2d
+  url: https://github.com/heremaps/xyz-spaces-python/archive/v{{ version }}.tar.gz
+  sha256: c218d47526855d42770e7b8e9c9b5eddb2033d6057f867101586ce21edb7faa0
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - setuptools
   run:
-    - python
+    - python >=3.6
     - geobuf
     - turfpy >=0.0.3
     - fiona
@@ -29,6 +29,7 @@ requirements:
     - requests
     - ijson ==3.1.1
     - backoff >=1.10.0
+    - pyhocon
 
 test:
   imports:
@@ -39,7 +40,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Manage your XYZ Hub server or HERE Data Hub from Python.'
+  summary: Manage your XYZ Hub server or HERE Data Hub from Python.
 
   description: |
     xyzspaces provides a programmatic interface to a XYZ Hub or HERE Data Hub
