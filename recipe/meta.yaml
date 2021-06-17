@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - setuptools
   run:
-    - python
+    - python >=3.6
     - geobuf
     - turfpy >=0.0.3
     - fiona
@@ -29,6 +29,7 @@ requirements:
     - requests
     - ijson ==3.1.1
     - backoff >=1.10.0
+    - pyhocon
 
 test:
   imports:
