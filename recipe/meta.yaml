@@ -27,7 +27,7 @@ requirements:
     - geojson
     - geopandas
     - requests
-    - ijson ==3.1.1
+    - ijson >=3.1.1
     - backoff >=1.10.0
     - pyhocon
     - requests-oauthlib
